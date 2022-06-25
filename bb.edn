@@ -1,0 +1,3 @@
+{:tasks {clean (shell "rm -Rf dist out")
+         build (shell "clj -M -m cljs.main -co build.edn -c")
+         bundle (shell "pnpm webpack --config webpack.config.js --mode=none")}}
