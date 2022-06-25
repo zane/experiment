@@ -7,5 +7,15 @@
   </head>
   <body>
     <script type="text/javascript" src="dist/bundle.js"></script>
+    <script type="text/javascript">
+      window.addEventListener('load', function () {
+        console.log("tinylib", window.tinylib);
+        console.log("tinylib.tiny", window.tinylib.tiny);
+        console.log("tinylib.hello", window.tinylib.hello);
+        console.log("tiny", window.tiny);
+        console.log("tiny.core", window.tiny && window.tiny.core);
+        console.log("tiny.core.hello", window.tiny && window.tiny.core && window.tiny.core.hello);
+      })
+    </script>
   </body>
 </html>
