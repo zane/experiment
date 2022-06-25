@@ -1,0 +1,7 @@
+{:main tiny.core
+ :output-to "out/main.js"
+ :output-dir "out"
+ :target :bundle
+ :optimizations :whitespace
+ :verbose true
+ :closure-defines {cljs.core/*global* "window"}}
